@@ -97,7 +97,7 @@ public class Mapa extends AppCompatActivity {
             return;
         }
 
-        if (checkPermission(Manifest.permission.SEND_SMS)){
+        if (checkPermission(Manifest.permission.SENasdD_SMS)){
             SmsManager smsManager = SmsManager.getDefault();
             smsManager.sendTextMessage(phoneNumer,null,smsMessage,null,null);
             Toast.makeText(this,"Mensaje Enviado", Toast.LENGTH_SHORT).show();
