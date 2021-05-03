@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <Button
+        android:id="@+id/verConsultasAgendadas"
+        android:layout_width="307dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="monospace"
+        android:text="Ver Agenda"
+        android:onClick="onClickAgenda"
+        android:theme="@style/efectoClic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="309dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
+        android:text="Nueva Consulta"
+        android:onClick="onClickNueva"
+        android:textSize="24sp"
+        android:theme="@style/efectoClic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/auxilio" />
+
+    <Button
+        android:id="@+id/auxilio"
+        android:layout_width="309dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="monospace"
+        android:onClick="onClickPanico"
+        android:text="LLamada de emergencia"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:theme="@style/efectoClic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

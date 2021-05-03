@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">POLISOFT</string>
+    <string name="cedula">Cedula de Identidad</string>
+    <string name="pass">Contraseña</string>
+    <string name="editarPerfil">Editar Perfil</string>
+    <string name="configuracion">Configuración</string>
+    <string name="contacto">Contacto / Ayuda</string>
+    <string name="logout">Logout</string>
+    <string name="appwidget_text">Botón de Pánico</string>
+    <string name="add_widget">Agregar widget</string>
+
+</resources>

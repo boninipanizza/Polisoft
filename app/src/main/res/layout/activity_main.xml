@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imagenlogin"
+        android:layout_width="403dp"
+        android:layout_height="401dp"
+        android:layout_margin="1dip"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/login2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="-3dp" />
+
+    <!--
+        android:ems="10"
+       android:fontFamily="casual"
+        android:textSize="10sp"
+        -->
+    <EditText
+        android:id="@+id/editTextCedula"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/arya"
+        android:hint="@string/cedula"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/imagenlogin"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/arya"
+        android:hint="@string/pass"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCedula"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/registrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="13dp"
+        android:text="Registrarse"
+        android:onClick="onClickregistro"
+        android:textColorHighlight="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
+        tools:ignore="MissingClass,MissingConstraints"
+        android:theme="@style/efectoClic" />
+
+    <Button
+        android:id="@+id/btnaplicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="72dp"
+        android:text="Login"
+        android:onClick="onClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
+        tools:ignore="MissingConstraints"
+        android:theme="@style/efectoClic"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

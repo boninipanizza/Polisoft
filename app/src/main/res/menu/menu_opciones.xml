@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/meditarPerfil"
+        android:title="@string/editarPerfil"
+        android:orderInCategory="100"
+        ></item>
+    <item
+        android:id="@+id/meconfig"
+        android:title="@string/configuracion"
+        android:orderInCategory="200"
+        ></item>
+    <item
+        android:id="@+id/mayuda"
+        android:title="@string/contacto"
+        android:orderInCategory="300"
+        ></item>
+    <item
+        android:id="@+id/mlogout"
+        android:title="@string/logout"
+        android:orderInCategory="400"
+        ></item>
+</menu>
